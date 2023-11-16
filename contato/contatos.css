@@ -1,0 +1,22 @@
+.networking{
+display: inline;
+position: relative;
+left: 20%;
+}
+
+.icon-img{
+    width: 200px;
+}
+.all-networking{
+    position: relative;
+    top: 20%;
+}
+
+.networking-user{
+text-align: center;
+font-size: xx-large;
+}
+
+.networking-text{
+    font-size: x-large;
+}

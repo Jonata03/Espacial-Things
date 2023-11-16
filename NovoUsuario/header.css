@@ -1,0 +1,176 @@
+ @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+
+ .header {
+     position: relative;
+     overflow: hidden;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: flex-start;
+     align-content: flex-start;
+     height: 50vw;
+     
+     height: 1000px;
+     color: #eee;
+ }
+
+ .header:after {
+     content: "";
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     z-index: -1;
+     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 40%, rgba(27, 32, 48, 1) 100%);
+ }
+
+ .header:before {
+     content: "";
+     width: 100%;
+     height: 200%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     -webkit-backface-visibility: hidden;
+     -webkit-transform: translateZ(0);
+     backface-visibility: hidden;
+     scale: (1.0, 1.0);
+     transform: translateZ(0);
+     background: #1B2030 url(../assets/img/Intestellar\ Gargantua\ Black\ Hole.jpg) 100% 0 no-repeat;
+     background-size: 125%;
+     background-attachment: scroll;
+     animation: grow 50s reverse 1ms infinite;
+     transition: all 0.4s ease-out;
+     z-index: -2
+ }
+
+ .header a {
+     color: #eee
+ }
+
+@keyframes grow {
+     0% {
+         transform: scale(1) translateY(0px)
+     }
+
+     50% {
+         transform: scale(2) translateY(200px)
+     }
+ }
+
+ .brasao {
+     width: 20%;
+     position: absolute;
+     left: 2%;
+     top: 2%;
+ }
+
+ .navbar {
+     background-color: transparent;
+     overflow: hidden;
+     position: absolute;
+     top: 10px;
+
+
+ }
+
+ .navbar ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+ }
+
+ .navbar li {
+     float: left;
+ }
+
+ .navbar a {
+     display: block;
+     color: rgb(255, 255, 255);
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 18px;
+ }
+
+ .navbar a:hover {
+     background-color: #ddd;
+     color: black;
+ }
+
+#newUser{
+    position: absolute;
+    top: 7%;
+    font-size: 60px;
+}
+#sidebar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+#sidebar ul li {
+    padding: 8px;
+    text-align: center;
+}
+
+#sidebar a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #818181;
+    display: block;
+    transition: 0.2s;
+}
+
+#sidebar a:hover {
+    color: #f1f1f1;
+}
+
+#toggleBtn {
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #ffffff;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: hsla(0, 0%, 1%, 0.4);
+    border-radius: 10px;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#closeBtn:hover {
+    color: #b9b9b9;
+}
+#opcoes{
+   padding: 15px 44px;
+   list-style: none;
+   position: relative;
+   text-align: center;
+   background-color: hsla(0, 1%, 29%, 0.4);;
+   color: #ddd;
+}
+
+.options-box{
+   text-align: center;
+   font-size: 20px;
+}
+
+.option{
+   background-color: hsla(0, 0%, 12%, 0.4);
+   font-size: 20px;
+}
