@@ -50,22 +50,23 @@
             <h1 id="newUser">Novo Usuario</h1>
             <div id="none2">
                 <div class="none"></div>
-                <div class="window">
-                    <form action="">
+                <div class="window"> 
+                    <form action="../sistema/cad.php" method="POST">
+                        <input type="hidden" name="acao" value="cadastrar">
                         <h1>Cadastro</h1>
                         <div class="campos">
                             <label for="">Nome-Usuario</label><br>
-                            <input type="text" placeholder="Nome"><br>
+                            <input type="text" placeholder="Nome" name="nome"><br>
                         </div>
 
                         <div class="campos">
                             <label for="">E-Mail</label><br>
-                            <input type="email" placeholder="E-Mail"><br>
+                            <input type="email" placeholder="E-Mail" name="email"><br>
                         </div>
 
                         <div class="campos">
                             <label for="">Senha</label><br>
-                            <input type="password" placeholder="Senha">
+                            <input type="password" placeholder="Senha" name="senha">
                         </div>
                         <div class="buttons">
                             <a href="../index.html"><button>Home</button></a>
