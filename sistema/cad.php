@@ -10,7 +10,7 @@
             $res = $conn->query($sql);
             if($res==true){
                 echo "<script>alert('Cadastrado com Sucesso!');</script>";
-                echo "<script>window.location.href = '../index.html'</script>";
+                echo "<script>window.location.href = '../index.php'</script>";
             }else{
                 echo "<script>alert('Não foi possivel cadastrar este usuario!');</script>";
             }
