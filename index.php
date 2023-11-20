@@ -1,3 +1,10 @@
+<?php
+if (isset($_COOKIE['nome_do_cookie'])) {
+    $nome_usuario = $_COOKIE['nome_do_cookie'];
+    echo "<h1>Bem-vindo, $nome_usuario!</h1>";
+} else {
+    echo "<h1>Bem-vindo ao nosso site!</h1>";
+}?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
