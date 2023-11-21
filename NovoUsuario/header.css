@@ -9,7 +9,6 @@
      align-items: flex-start;
      align-content: flex-start;
      height: 50vw;
-     
      height: 1000px;
      color: #eee;
  }
@@ -55,7 +54,7 @@
      }
 
      50% {
-         transform: scale(2) translateY(200px)
+         transform: scale(2) translateY(50000px)
      }
  }
 
