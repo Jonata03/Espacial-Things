@@ -41,7 +41,7 @@
 
             <nav class="navbar">
                 <ul>
-                    <li><a href="../index.html">Página Inicial</a></li>
+                    <li><a href="../index.php">Página Inicial</a></li>
                     <li><a href="../contato/contatos.html">Contato</a></li>
                     <li><a href="../assets/html/login.html" id="Login">Login</a></li>
                 </ul>
