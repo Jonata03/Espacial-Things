@@ -27,7 +27,7 @@
 .header:before {
     content: "";
     width: 100%;
-    height: 200%;
+    height: 190%;
     position: absolute;
     top: 0;
     left: 0;
@@ -37,9 +37,9 @@
     scale: (1.0, 1.0);
     transform: translateZ(0);
     background: #1B2030 url(../assets/img/Intestellar\ Gargantua\ Black\ Hole.jpg) 100% 0 no-repeat;
-    background-size: 125%;
+    background-size: 200%;
     background-attachment: scroll;
-    animation: grow 50s reverse 1ms infinite;
+    animation: grow 70s reverse 1ms infinite;
     transition: all 0.4s ease-out;
     z-index: -2
 }
@@ -54,7 +54,7 @@
     }
 
     50% {
-        transform: scale(2) translateY(500px)
+        transform: scale(2) translateY(700px)
     }
 }
 
