@@ -23,9 +23,15 @@
                 <div class="options-box">
                     <label for="opcoes">Escolha uma opção:</label><br><br>
                     <select id="opcoes">
-                        <option value="opcao1" class="option">Documentarios</option>
-                        <option value="opcao2"class="option">Explorções Espaciais</option>
-                        <option value="opcao3"class="option">Filmes</option>
+                        <a href="https://revistagalileu.globo.com/Cultura/noticia/2020/04/11-series-e-documentarios-da-netflix-para-aprender-mais-sobre-o-planeta-terra.html">
+                            <option value="opcao1" class="option">Documentarios</option>
+                        </a>
+                        <a href="">
+                            <option value="opcao2" class="option">Explorções Espaciais</option>
+                        </a>
+                        <a href="">
+                            <option value="opcao3" class="option">Filmes</option>
+                        </a>
                         <!-- Adicione mais opções conforme necessário -->
                     </select>
                 </div>
@@ -127,8 +133,18 @@
                         interação desses módulos com a superfície lunar, especialmente em áreas inexploradas.</p>
                 </a>
             </div>
+
+            <h1 class="title">LIVE da extratosfera</h1>
+            <p class="text">Aqui se encontra a LIVE em tempo real da estratosfera da terra 24 horas por dia</p>
+            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/QviXe8xvA50?si=a7Ty4QG8iB5peizg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
         </div>
     </div>
+
+
 
     <footer class="flex-rw">
         <ul class="footer-list-top">
