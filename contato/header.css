@@ -157,12 +157,11 @@
     color: #b9b9b9;
 }
 #opcoes{
-   padding: 15px 44px;
-   list-style: none;
-   position: relative;
-   text-align: center;
-   background-color: hsla(0, 1%, 29%, 0.4);;
-   color: #ddd;
+    padding: 15px;
+    padding-right: 20px; 
+    position: relative;
+    background-color: hsla(0, 1%, 29%, 0.4);;
+    color: #ddd;
 }
 
 .options-box{
