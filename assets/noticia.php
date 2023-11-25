@@ -22,24 +22,21 @@
                 <span id="closeBtn">&times;</span>
                 <div class="options-box">
                     <label for="opcoes">Escolha uma opção:</label><br><br>
-                    <select id="opcoes">
-                        <a href="https://revistagalileu.globo.com/Cultura/noticia/2020/04/11-series-e-documentarios-da-netflix-para-aprender-mais-sobre-o-planeta-terra.html">
-                            <option value="opcao1" class="option">Documentarios</option>
-                        </a>
-                        <a href="">
-                            <option value="opcao2" class="option">Explorções Espaciais</option>
-                        </a>
-                        <a href="">
-                            <option value="opcao3" class="option">Filmes</option>
-                        </a>
-                        <!-- Adicione mais opções conforme necessário -->
+
+                    <select id="menuSelect">
+                        <option
+                        value="https://revistagalileu.globo.com/Cultura/noticia/2020/04/11-series-e-documentarios-da-netflix-para-aprender-mais-sobre-o-planeta-terra.html"
+                        class="option">Documentarios</option>
+                        <option value="https://www.nasa.gov/?search=mission" class="option">Explorções Espaciais
+                        </option>
+                        <option value="https://www.nasa.gov/interactives/" class="option">Filmes</option>
                     </select>
                     <a href="../contato/contatos.html">Contatos</a>
                 </div>
             </div>
             <img src="img/navbar letreiro.png" alt="" class="brasao">
             </nav>
-            <h1 class="title-noticias">Notícias</h1>           
+            <h1 class="title-noticias">Notícias</h1>
             <div class="info">
                 <h4><a href="#category"></a></h4>
             </div>
@@ -113,8 +110,8 @@
                 </a>
             </div>
             <div class="news">
-                <img src="img/1-pia26202-perseverances-parking-spot-during-conjunction.webp"
-                    alt="image introduction" class="img-notice">
+                <img src="img/1-pia26202-perseverances-parking-spot-during-conjunction.webp" alt="image introduction"
+                    class="img-notice">
                 <a
                     href="https://www.nasa.gov/solar-system/planets/mars/nasas-mars-fleet-will-still-conduct-science-while-lying-low/">
                     <h3 class="title-news">A frota de Marte da NASA ainda conduzirá ciência enquanto estiver escondida.
@@ -147,46 +144,28 @@
                 <h4 class="footer-list-header">FRASE MOTIVACIONAL</h4>
             </li>
             <li><a href=' ' class="generic-anchor footer-list-anchor" itemprop="significantLink">"Leve o tempo que
-                    for
-                    pra encontrar </a></li>
-            <li><a href=' ' class="generic-anchor footer-list-anchor" itemprop="significantLink">qual é a sua praia,
+                    for <br> pra encontrar qual é a sua praia,<br>
+                    mas quando encontrar, recue ante <br>nenhum
+                    pretesto" -Zaratrusta</a></li>
+            <!-- <li><a href=' ' class="generic-anchor footer-list-anchor" itemprop="significantLink">qual é a sua praia,
                     mas
                     quando encontrar, </a>
             </li>
             <li><a href=' ' class="generic-anchor footer-list-anchor" itemprop="significantLink">recue ante nenhum
                     pretesto"</a></li>
 
-            <li><a href=' ' itemprop="significantLink" class="generic-anchor footer-list-anchor">-Zaratrusta</a>
-            </li>
-
-
+            <li><a href=' ' itemprop="significantLink" class="generic-anchor footer-list-anchor"></a>
+            </li>  -->
         </ul>
+
         <ul class="footer-list-top">
             <li>
                 <h4 class="footer-list-header">SELEÇÕES</h4>
             </li>
-            <li><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">Imagens</a></li>
-            <li><a href='/Home-Decor/cat/id/64' class="generic-anchor footer-list-anchor">HOME</a></li>
+            <li><a href='https://www.nasa.gov/images/' class="generic-anchor footer-list-anchor">Imagens</a></li>
             <li><a href="https://www.youtube.com/watch?v=QviXe8xvA50" class="generic-anchor footer-list-anchor">LIVE</a>
             </li>
-            <li><a href='/Pet-Lover/cat/id/108' class="generic-anchor footer-list-anchor">Missões</a></li>
-            <li><a href='/Ladies-Accessories/cat/id/117' class="generic-anchor footer-list-anchor"
-                    target="_blank">Documentarios</a></li>
-        </ul>
-        <ul class="footer-list-top">
-            <li id='help'>
-                <h4 class="footer-list-header">HELP ME</h4>
-            </li>
-            <li><a href='/shop/about-contact' target="_blank" class="generic-anchor footer-list-anchor"
-                    itemprop="significantLink">Contato</a></li>
-            <li><a href='/faq.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a>
-            </li>
-            <li id='find-a-store'><a href='/shop/store-locator' class="generic-anchor footer-list-anchor"
-                    itemprop="significantLink">Cadastro</a></li>
-            <li id='user-registration'><a href='/shop/user-registration?URL=' class="generic-anchor footer-list-anchor"
-                    itemprop="significantLink">Sobre nós</a></li>
-            <li id='order-tracking'><a href='/shop/order-status' itemprop="significantLink"
-                    class="generic-anchor footer-list-anchor">Início</a></li>
+            <li><a href='https://www.nasa.gov/nasa-missions/' class="generic-anchor footer-list-anchor">Missões</a></li>
         </ul>
 
         <section class="footer-bottom-section flex-rw">
@@ -194,10 +173,6 @@
                 <i class="fa fa-copyright" role="copyright">
 
                 </i> Desde 2023 <address class="footer-address" role="company address">Coxim, MS</address>
-            </div>
-            <div class="footer-bottom-wrapper">
-                <a href="/terms-of-use.html" class="generic-anchor" rel="nofollow">Terms</a> | <a
-                    href="/privacy-policy.html" class="generic-anchor" rel="nofollow">Privacy</a>
             </div>
         </section>
     </footer>

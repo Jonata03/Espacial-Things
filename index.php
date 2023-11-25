@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/img/brasao ATOMO.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/brasao ATOMO.png" type="image/x-icon">
     <link rel="stylesheet" href="login/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="login/login.css">

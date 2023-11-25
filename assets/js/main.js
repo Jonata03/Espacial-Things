@@ -20,3 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.getElementById("menuSelect").addEventListener("change", function() {
+  var selectedOption = this.options[this.selectedIndex].value;
+
+  console.log("Selected Option: ", selectedOption);
+
+  if (selectedOption) {
+      window.location.href = selectedOption;
+  }
+});
