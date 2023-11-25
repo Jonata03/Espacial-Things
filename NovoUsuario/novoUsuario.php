@@ -15,66 +15,34 @@
     <hearder>
         <div class="header">
             <img src="../assets/img/navbar letreiro.png" alt="" class="brasao">
-            
-            <button id="toggleBtn">&#9776</button>
-            <div id="sidebar">
-                <span id="closeBtn">&times;</span>
-                <div class="options-box">
-                    <label for="opcoes">Escolha uma opção:</label><br><br>
-                    <select id="opcoes">
-                        <a href="">
-                            <option value="opcao1" class="option">Documentarios</option>
-                        </a>
-                        <a href="">
-                            <option value="opcao2"class="option">Explorções Espaciais</option>
-                        </a>
-                        <a href="">
-                            <option value="opcao3"class="option">Filmes</option>
-                        </a>
-                        <a href="">
-                            <option value="opcao3"class="option">Imagens</option>
-                        </a>
-                        <!-- Adicione mais opções conforme necessário -->
-                    </select>
-                </div>
-            </div>
-
-            <nav class="navbar">
-                <ul>
-                    <li><a href="../index.php">Página Inicial</a></li>
-                    <li><a href="../contato/contatos.html">Contato</a></li>
-                    <li><a href="../assets/html/login.html" id="Login">Login</a></li>
-                </ul>
-            </nav>
-
             <h1 id="newUser">Novo Usuario</h1>
             <div id="none2">
                 <div class="none"></div>
+                
                 <div class="window"> 
                     <form action="../sistema/cad.php" method="POST">
                         <input type="hidden" name="acao" value="cadastrar">
-                        <h1>Cadastro</h1>
                         <div class="campos">
                             <label for="">Nome-Usuario</label><br>
-                            <input type="text" placeholder="Nome" name="nome"><br>
+                            <input type="text" placeholder="Nome" name="nome" required><br>
                         </div>
 
                         <div class="campos">
                             <label for="">E-Mail</label><br>
-                            <input type="email" placeholder="E-Mail" name="email"><br>
+                            <input type="email" placeholder="E-Mail" name="email" required><br>
                         </div>
 
                         <div class="campos">
                             <label for="">Senha</label><br>
-                            <input type="password" placeholder="Senha" name="senha">
+                            <input type="password" placeholder="Senha" name="senha" required>
                         </div>
                         <div class="buttons">
-                            <a href="../index.html"><button>Home</button></a>
+                            
                             <button id="btn-cadastrar">Cadastrar</button>
                         </div>
-
                     </form>
                 </div>
+                <a href="../index.php" class="btn-login"><button>Login</button></a>
                 <div class="none"></div>
             </div>
         </div>

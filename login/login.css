@@ -1,4 +1,3 @@
-
 form{
     display: block;
     text-align: center;
@@ -13,12 +12,12 @@ form{
 }
 
 .window{
-    border: black solid;
-    border-radius: 60px;
-    display: flex;
-    position: relative;
-    left: 5%;
-    top: 320px;
+border: black solid;
+border-radius: 60px;
+display: flex;
+position: relative;
+left: 10%;
+top: 340px;
 }
 
 input{
@@ -31,14 +30,13 @@ input{
 }
 
 .campos{
-    padding: 20px;
+    padding: 30px;
 }
 
 .buttons{
-    padding: px;
     position: relative;
     padding-top: 40px;
-    left: 190px;
+    left: 220px;
     
 }
 button{
@@ -49,18 +47,17 @@ button{
 button:hover{
     padding: 21.5px;
     cursor: pointer;
-    
 }
 
 #btn-cadastrar{
     background-color: hsla(152, 100%, 50%, 0.4);
 }
-
-.btn-login{
+.btn-newUser{
     position: relative;
-    top: 671px;
-    right: 280px;
+    top: 690px;
+    right: 230px;
 }
+
 
 
 .none{

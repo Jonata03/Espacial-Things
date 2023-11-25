@@ -36,8 +36,8 @@
     backface-visibility: hidden;
     scale: (1.0, 1.0);
     transform: translateZ(0);
-    background: #1B2030 url(../assets/img/Intestellar\ Gargantua\ Black\ Hole.jpg) 100% 0 no-repeat;
-    background-size: 200%;
+    background: #1B2030 url(../assets/img/terra.jpg) 100% 0 no-repeat;
+    background-size: 140%;
     background-attachment: scroll;
     animation: grow 70s reverse 1ms infinite;
     transition: all 0.4s ease-out;
@@ -100,8 +100,7 @@
 
 #newUser{
    position: absolute;
-   top: 250px;
-   left: 35%;
+   top: 280px;
    font-size: 60px;
 }
 #sidebar {

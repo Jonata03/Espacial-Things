@@ -60,7 +60,7 @@ main {
 
 footer {
   background: rgb(55, 55, 55);
-  margin-top: auto;
+  margin-top: none;
   width: 100%;
 }
 
