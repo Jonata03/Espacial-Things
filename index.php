@@ -1,5 +1,30 @@
+<?php
+include("sistema/configuracao.php");
+
+// Verifica se o formulário de login foi enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Obtém as credenciais do formulário
+    $nome = $_POST["nome"];
+    $senha = $_POST["senha"];
+
+    // Consulta ao banco de dados
+    $sql = "SELECT id, nome, senha FROM usuarios WHERE nome = '$nome' AND senha = '$senha'";
+
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // Cria um cookie de login válido por 1 hora (3600 segundos)
+        setcookie("usuario_logado", "true", time() + 3600, "/");
+        header("Location: area_restrita.php");
+        echo "<script>window.alert('cookie criado');'</script>";
+        exit();
+    } else {
+        $erro_login = "Credenciais inválidas. Tente novamente.";
+    }
+}?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -27,7 +52,7 @@
                         </div>
                         <div class="campos">
                             <label for="">Senha</label><br>
-                            <input type="password" placeholder="Senha" name="senha" required>
+                            <input type="password" placeholder="Senha"name="senha" required>
                         </div>
                         <div class="buttons">
 
@@ -43,62 +68,6 @@
         </div>
     </hearder>
 
-    <footer class="flex-rw">
-        <ul class="footer-list-top">
-            <li>
-                <h4 class="footer-list-header">FRASE MOTIVACIONAL</h4>
-            </li>
-            <li><a href=' ' class="generic-anchor footer-list-anchor" itemprop="significantLink">"Leve o tempo que for
-                    pra encontrar </a></li>
-            <li><a href=' ' class="generic-anchor footer-list-anchor" itemprop="significantLink">qual é a sua praia,mas
-                    quando encontrar, </a>
-            </li>
-            <li><a href=' ' class="generic-anchor footer-list-anchor" itemprop="significantLink">recue ante nenhum
-                    pretesto"</a></li>
-
-            <li><a href=' ' itemprop="significantLink" class="generic-anchor footer-list-anchor">-Zaratrusta</a>
-            </li>
-
-
-        </ul>
-        <ul class="footer-list-top">
-            <li>
-                <h4 class="footer-list-header">SELEÇÕES</h4>
-            </li>
-            <li><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">Imagens</a></li>
-            <li><a href='/index.html' class="generic-anchor footer-list-anchor">HOME</a></li>
-            <li><a href='/Mugs/cat/id/32' class="generic-anchor footer-list-anchor">LIVE</a></li>
-            <li><a href='/Pet-Lover/cat/id/108' class="generic-anchor footer-list-anchor">Missões</a></li>
-            <li><a href='/Ladies-Accessories/cat/id/117' class="generic-anchor footer-list-anchor"
-                    target="_blank">Documentarios</a></li>
-        </ul>
-        <ul class="footer-list-top">
-            <li id='help'>
-                <h4 class="footer-list-header">HELP ME</h4>
-            </li>
-            <li><a href='/shop/about-contact' class="generic-anchor footer-list-anchor"
-                    itemprop="significantLink">Contato</a></li>
-            <li><a href='/faq.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a>
-            </li>
-            <li id='find-a-store'><a href='/shop/store-locator' class="generic-anchor footer-list-anchor"
-                    itemprop="significantLink">Cadastro</a></li>
-            <li id='user-registration'><a href='/shop/user-registration?URL=' class="generic-anchor footer-list-anchor"
-                    itemprop="significantLink">Sobre nós</a></li>
-            <li id='order-tracking'><a href='../index.html' itemprop="significantLink"
-                    class="generic-anchor footer-list-anchor">Início</a></li>
-        </ul>
-        <section class="footer-bottom-section flex-rw">
-            <div class="footer-bottom-wrapper">
-                <i class="fa fa-copyright" role="copyright">
-
-                </i> Desde 2023 <address class="footer-address" role="company address">Coxim, MS</address>
-            </div>
-            <div class="footer-bottom-wrapper">
-                <a href="/terms-of-use.html" class="generic-anchor" rel="nofollow">Terms</a> | <a
-                    href="/privacy-policy.html" class="generic-anchor" rel="nofollow">Privacy</a>
-            </div>
-        </section>
-    </footer>
 </body>
 <script src="login/login.js"></script>
 
